@@ -4,7 +4,7 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "pypcmringbuffer"
-version = "0.0.3"
+version = "0.0.4"
 description = "A Python implementation of a PCM ring buffer"
 authors = [{ name = "lotcarnage", email = "lotcarnage@gmail.com" }]
 readme = "README.md"
