@@ -4,7 +4,7 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "PyPcmRingBuffer"
-version = "0.0.1"
+version = "0.0.2"
 description = "A Python implementation of a PCM ring buffer"
 authors = [{ name = "lotcarnage", email = "lotcarnage@gmail.com" }]
 readme = "README.md"
@@ -20,3 +20,7 @@ Repository = "https://github.com/lotcarnage/pypcmringbuffer"
 [tool.flit.module]
 # パッケージのモジュール名（=トップレベルディレクトリ名）
 name = "pypcmringbuffer"
+
+[tool.flit.sdist]
+include = ["pypcmringbuffer/**", "pyproject.toml", "README.md", "LICENSE"]
+exclude = ["*.pyc", "*.pyo", "*.pyd", ".gitignore", "test_*.py"]
