@@ -1,0 +1,22 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "PyPcmRingBuffer"
+version = "0.0.1"
+description = "A Python implementation of a PCM ring buffer"
+authors = [{ name = "lotcarnage", email = "lotcarnage@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+
+# 依存パッケージがある場合
+dependencies = ["numpy >=1.20"]
+
+[project.urls]
+Repository = "https://github.com/lotcarnage/pypcmringbuffer"
+
+[tool.flit.module]
+# パッケージのモジュール名（=トップレベルディレクトリ名）
+name = "pypcmringbuffer"
